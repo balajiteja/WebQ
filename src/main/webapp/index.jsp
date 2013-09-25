@@ -1,6 +1,35 @@
 <%@ include file="/taglibs.jsp" %>
 
 <head>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+	</script>
+	<script> 
+	$(document).ready(function(){
+	  $("#login").click(function(){
+	    $("#loginpage").slideToggle("slow");
+	  });
+	});
+	$(document).ready(function(){
+		  $("#register").click(function(){
+		    $("#panel").slideToggle("slow");
+		  });
+	});
+	</script>
+	 
+	<style type="text/css"> 
+	#panel,#flip
+	{
+	padding:5px;
+	text-align:center;
+	background-color:#e5eecc;
+	border:solid 1px #c3c3c3;
+	}
+	#panel
+	{
+	padding:50px;
+	display:none;
+	}
+	</style>
     <style type="text/css">
         .button {
             margin-top: 5px
@@ -53,17 +82,17 @@
     </p>
 
     <p>
-        <button class="button" id="demo">Login</button>
-        <button class="button" id="status">Register</button>
+        <button id="login" class="button" id="demo">Login</button>
+        <button id="register" class="button" id="status">Register</button>
     </p>
 </div>
-
+<div id="loginpage"><%@include file="/login.jsp" %></div>
 <content tag="underground">
     <h3>Assumptions</h3>
     <ul>
-        <li>It's 2011, you should be thinking about HTML5 and SOFEA.</li>
-        <li>JRebel should be used to allow quick reloading of classes.</li>
-        <li>Conventions are more important than configurability.</li>
+        <li>Student is taking the exam from a remote login</li>
+        <li></li>
+        <li></li>
     </ul>
 </content>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>
