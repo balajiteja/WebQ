@@ -19,7 +19,6 @@
 	<javax.servlet.jsp.version>2.1</javax.servlet.jsp.version>
 	<jaxb.version>2.2.9</jaxb.version>
 	<log4j.version>1.2.9</log4j.version>
-	<slf4j.version>1.7.5</slf4j.version>
 	<guava.version>13.0.1</guava.version>
     <spring.version>3.1.1.RELEASE</spring.version>
 	<springTest.version>3.1.1.RELEASE</springTest.version>
@@ -56,11 +55,6 @@
 	        <artifactId>guava</artifactId>
 	        <version>${guava.version}</version>
 	    </dependency>
-		<dependency>
-			<groupId>org.slf4j</groupId>
-			<artifactId>slf4j-simple</artifactId>
-			<version>${slf4j.version}</version>
-		</dependency>
 		<dependency>
 			<groupId>log4j</groupId>
 			<artifactId>log4j</artifactId>
