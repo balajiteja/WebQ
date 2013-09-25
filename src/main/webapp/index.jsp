@@ -6,7 +6,7 @@
 	<script> 
 	$(document).ready(function(){
 	  $("#login").click(function(){
-	    $("#loginpage").slideToggle("slow");
+		  $("#loginpage").slideToggle("slow");
 	  });
 	});
 	$(document).ready(function(){
